@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("/assets/img/Bckground.png");
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    font-family: 'SFUITextRegular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    line-height: 2;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+h2 {
+    font-family: 'SFUITextBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'Pixeboy';
+    src: url('/assets/fonts/Pixeboy.eot');
+    src: url('/assets/fonts/Pixeboy.eot') format('embedded-opentype'),
+         url('/assets/fonts/Pixeboy.woff2') format('woff2'),
+         url('/assets/fonts/Pixeboy.woff') format('woff'),
+         url('/assets/fonts/Pixeboy.ttf') format('truetype'),
+         url('/assets/fonts/Pixeboy.svg#Pixeboy') format('svg');
+}
+@font-face {
+    font-family: 'SFUITextBold';
+    src: url('/assets/fonts/SFUITextBold.eot');
+    src: url('/assets/fonts/SFUITextBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextBold.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextBold.woff') format('woff'),
+         url('/assets/fonts/SFUITextBold.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextBold.svg#SFUITextBold') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextBoldItalic';
+    src: url('/assets/fonts/SFUITextBoldItalic.eot');
+    src: url('/assets/fonts/SFUITextBoldItalic.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextBoldItalic.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextBoldItalic.woff') format('woff'),
+         url('/assets/fonts/SFUITextBoldItalic.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextBoldItalic.svg#SFUITextBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextHeavy';
+    src: url('/assets/fonts/SFUITextHeavy.eot');
+    src: url('/assets/fonts/SFUITextHeavy.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextHeavy.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextHeavy.woff') format('woff'),
+         url('/assets/fonts/SFUITextHeavy.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextHeavy.svg#SFUITextHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextHeavyItalic';
+    src: url('/assets/fonts/SFUITextHeavyItalic.eot');
+    src: url('/assets/fonts/SFUITextHeavyItalic.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextHeavyItalic.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextHeavyItalic.woff') format('woff'),
+         url('/assets/fonts/SFUITextHeavyItalic.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextHeavyItalic.svg#SFUITextHeavyItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextLight';
+    src: url('/assets/fonts/SFUITextLight.eot');
+    src: url('/assets/fonts/SFUITextLight.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextLight.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextLight.woff') format('woff'),
+         url('/assets/fonts/SFUITextLight.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextLight.svg#SFUITextLight') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextLightItalic';
+    src: url('/assets/fonts/SFUITextLightItalic.eot');
+    src: url('/assets/fonts/SFUITextLightItalic.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextLightItalic.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextLightItalic.woff') format('woff'),
+         url('/assets/fonts/SFUITextLightItalic.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextLightItalic.svg#SFUITextLightItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextMedium';
+    src: url('/assets/fonts/SFUITextMedium.eot');
+    src: url('/assets/fonts/SFUITextMedium.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextMedium.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextMedium.woff') format('woff'),
+         url('/assets/fonts/SFUITextMedium.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextMedium.svg#SFUITextMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextMediumItalic';
+    src: url('/assets/fonts/SFUITextMediumItalic.eot');
+    src: url('/assets/fonts/SFUITextMediumItalic.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextMediumItalic.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextMediumItalic.woff') format('woff'),
+         url('/assets/fonts/SFUITextMediumItalic.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextMediumItalic.svg#SFUITextMediumItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextRegular';
+    src: url('/assets/fonts/SFUITextRegular.eot');
+    src: url('/assets/fonts/SFUITextRegular.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextRegular.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextRegular.woff') format('woff'),
+         url('/assets/fonts/SFUITextRegular.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextRegular.svg#SFUITextRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextRegularItalic';
+    src: url('/assets/fonts/SFUITextRegularItalic.eot');
+    src: url('/assets/fonts/SFUITextRegularItalic.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextRegularItalic.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextRegularItalic.woff') format('woff'),
+         url('/assets/fonts/SFUITextRegularItalic.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextRegularItalic.svg#SFUITextRegularItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextSemibold';
+    src: url('/assets/fonts/SFUITextSemibold.eot');
+    src: url('/assets/fonts/SFUITextSemibold.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextSemibold.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextSemibold.woff') format('woff'),
+         url('/assets/fonts/SFUITextSemibold.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextSemibold.svg#SFUITextSemibold') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUITextSemiboldItalic';
+    src: url('/assets/fonts/SFUITextSemiboldItalic.eot');
+    src: url('/assets/fonts/SFUITextSemiboldItalic.eot') format('embedded-opentype'),
+         url('/assets/fonts/SFUITextSemiboldItalic.woff2') format('woff2'),
+         url('/assets/fonts/SFUITextSemiboldItalic.woff') format('woff'),
+         url('/assets/fonts/SFUITextSemiboldItalic.ttf') format('truetype'),
+         url('/assets/fonts/SFUITextSemiboldItalic.svg#SFUITextSemiboldItalic') format('svg');
+}
+
+
+
+
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+header {
+    background-color: #000134;
+}
+header .nav-primary{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #000134;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px
+}
+header ul {
+    display: none;
+    list-style: none;
+    margin-bottom: -4px;
+}
+header a.menu div {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+header ul li.active:after {
+    content: " ";
+    display: inline-block;
+    height: 4px;
+    border-radius: 2px;
+    background-color: white;
+    width: 100%;
+}
+header ul li:last-child a {
+    color: #000;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+@media (min-width: 1025px) {
+    header ul {
+        display: flex;
+    }
+    header a.menu {
+        display: none;
+    }
+}
+/*------------------------------------*\
+    Banner
+\*------------------------------------*/
+#banner {
+    color: white;
+    padding: 150px 0 250px;
+}
+#banner .banner-container {
+    /* padding: 60px 60px; */
+}
+#banner .left {
+    text-align: center;
+}
+#banner .right {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#banner .right .img-container {
+    position: relative;
+}
+#banner .right img.img-first {
+}
+#banner .right img.img-second {
+    position: absolute;
+    left: -145px;
+    top: 150px;
+}
+#banner .right img.img-third {
+    position: absolute;
+    right: -96px;
+    top: 195px;
+}
+#banner h1 {
+    font-size: 80px;
+    font-family: 'Pixeboy', sans-serif;
+}
+#banner h3 {
+    font-size: 25px;
+    line-height: 1.5;
+}
+#banner a {
+    display: inline-block;
+    color: #000;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding:  10px 40px;
+    font-weight: 600;
+    background-color: white;
+}
+@media (min-width: 1025px) {
+    #banner .left {
+        text-align: left;
+    }
+    #banner .banner-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*------------------------------------*\
+    Half Text Half Image
+\*------------------------------------*/
+.half-image-half-text {
+    color: white;
+    padding: 150px 0 0;
+    text-align: center;
+}
+.half-image-half-text h2 {
+    line-height: 2;
+}
+.half-image-half-text img {
+    margin-top: 50px;
+    max-width: 100%;
+}
+@media (min-width: 1025px) {
+    .half-image-half-text {
+        text-align: left;
+    }
+    .half-image-half-text img {
+        margin-top: 0;
+    }
+}
+
+/*------------------------------------*\
+    Half Multi Image Halt Text
+\*------------------------------------*/
+.half-multi-image-half-text {
+    color: white;
+    padding: 150px 0 0;
+    text-align: center;
+}
+.half-multi-image-half-text h2 {
+    line-height: 2;
+}
+.half-multi-image-half-text h2.colored {
+    color: #00E8F1;
+    margin-top: 26px;
+}
+.half-multi-image-half-text img {
+    margin-top: 50px;
+}
+
+@media (min-width: 1025px) {
+    .half-multi-image-half-text {
+        text-align: left;
+    }
+    .half-multi-image-half-text img {
+        margin-top: 0;
+    }
+}
+
+
+/*------------------------------------*\
+    Text Block
+\*------------------------------------*/
+.text-block {
+    padding: 150px 0 0;
+    color: white;
+    text-align: center;
+}
+.text-block h2 {
+    margin-bottom: 40px;
+}
+.text-block p span {
+    font-size: 24px;
+    margin-top: 50px;
+    display: inline-block;
+    font-family: 'SFUITextSemibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------------*\
+    Roadmap
+\*------------------------------------*/
+.roadmap {
+    color: white;
+    padding: 150px 0;
+}
+.roadmap-container {
+    text-align: center;
+}
+.roadmap-container h2 {
+    line-height: 2;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.roadmap-container img {
+    width: 100%;
+}
