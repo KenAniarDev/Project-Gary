@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-repeat: repeat-y;
     background-size: 100%;
+    overflow-x: hidden;
     font-family: 'SFUITextRegular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 p {
@@ -211,41 +212,37 @@ header ul li:last-child a {
 \*------------------------------------*/
 #banner {
     color: white;
-    padding: 150px 0 250px;
-}
-#banner .banner-container {
-    /* padding: 60px 60px; */
+    padding: 150px 0 0;
 }
 #banner .left {
     text-align: center;
 }
 #banner .right {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 #banner .right .img-container {
     position: relative;
 }
-#banner .right img.img-first {
-}
-#banner .right img.img-second {
-    position: absolute;
-    left: -145px;
-    top: 150px;
-}
-#banner .right img.img-third {
-    position: absolute;
-    right: -96px;
-    top: 195px;
-}
-#banner h1 {
-    font-size: 80px;
+#banner h1.title {
+    font-size: 60px;
     font-family: 'Pixeboy', sans-serif;
 }
-#banner h3 {
-    font-size: 25px;
+#banner h1.coming-soon {
+    font-size: 45px;
+    margin-top: 20px;
     line-height: 1.5;
+    color: #FB01FB;
+    font-family: 'SFUITextHeavy', sans-serif;
+}
+#banner h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#banner h4 {
+    font-size: 20px;
 }
 #banner a {
     display: inline-block;
@@ -257,13 +254,41 @@ header ul li:last-child a {
     font-weight: 600;
     background-color: white;
 }
+#banner img {
+    margin-top: 50px !important;
+}
+@media (min-width: 375px) {
+    #banner h1.title {
+        font-size: 70px;
+    }
+}
+@media (min-width: 425px) {
+    #banner h1.title {
+        font-size: 80px;
+    }
+}
 @media (min-width: 1025px) {
+    #banner {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
     #banner .left {
         text-align: left;
     }
-    #banner .banner-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    #banner h1.title {
+        font-size: 100px;
+    }
+    #banner h1.coming-soon {
+        font-size: 55px;
+    }
+    #banner h3 {
+        font-size: 36px;
+    }
+    #banner h4 {
+        font-size: 24px;
+    }
+    #banner img {
+        margin-top: 0 !important;
     }
 }
 
@@ -279,8 +304,12 @@ header ul li:last-child a {
     line-height: 2;
 }
 .half-image-half-text img {
-    margin-top: 50px;
     max-width: 100%;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: inherit;
 }
 @media (min-width: 1025px) {
     .half-image-half-text {
@@ -332,11 +361,56 @@ header ul li:last-child a {
     margin-bottom: 40px;
 }
 .text-block p span {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 50px;
     display: inline-block;
     font-family: 'SFUITextSemibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.text-block .person {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-block .person a {
+    color: white;
+    text-decoration: none;
+}
+.text-block .person a,
+.text-block .person h4 {
+    margin: 0 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.text-block .person h4 {
+    font-size: 24px;
+    display: flex;
+}
+.text-block .person h4 a{
+    margin: 0;
+    margin-left: 20px;
+}
+.text-block .person h4 span {
+    font-size: 16px;
+}
+@media (min-width: 1025px) {
+    .text-block p span {
+        font-size: 24px;
+    }
+    .text-block .person a {
+        font-size: 24px;
+    }
+    .text-block .person h4 {
+        font-size: 28px;
+    }
+    .text-block .person h4 span {
+        font-size: 18px;
+    }
+    .text-block .person h4 a{
+        margin-left: 40px;
+    }
+}
+
 
 /*------------------------------------*\
     Roadmap
@@ -352,7 +426,4 @@ header ul li:last-child a {
     line-height: 2;
     margin-bottom: 50px;
     font-size: 40px;
-}
-.roadmap-container img {
-    width: 100%;
 }
