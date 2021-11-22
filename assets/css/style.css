@@ -217,7 +217,7 @@ header ul li:last-child a {
 \*------------------------------------*/
 #banner {
   color: white;
-  padding: 150px 0 0;
+  padding: 150px 0 150px;
 }
 #banner .left {
   text-align: center;
@@ -275,7 +275,6 @@ header ul li:last-child a {
 @media (min-width: 1025px) {
   #banner {
     padding-top: 150px;
-    padding-bottom: 100px;
   }
   #banner .left {
     text-align: left;
@@ -462,5 +461,48 @@ header ul li:last-child a {
 @media (min-width: 1025px) {
   .count-down {
     justify-content: flex-start;
+  }
+}
+
+/* Mint Stats Styles */
+.mint-stats * {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+.mint-stats h3 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 40px;
+  background-color: #0e0e40;
+}
+.stats h5 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.minted .value,
+.holder span {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+.minted,
+.holder {
+  padding: 30px 60px;
+}
+@media (min-width: 1025px) {
+  .mint-stats h3 {
+    font-size: 36px;
+  }
+  .stats h5 {
+    font-size: 1.2rem;
+  }
+  .stats .value,
+  .holder span {
+    font-size: 2.3rem;
   }
 }
